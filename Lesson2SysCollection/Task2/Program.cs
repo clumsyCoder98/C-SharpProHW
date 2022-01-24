@@ -22,7 +22,7 @@ namespace Task2
             Console.WriteLine(cu1.Equals(cu3));
 
 
-            CustomerProductList test = new CustomerProductList();
+            CustProdListRemake test = new CustProdListRemake();
 
             test.Add(cu1, pro1);
             test.Add(cu2, pro2);
@@ -65,6 +65,15 @@ namespace Task2
                     Console.WriteLine(values[j].Category);
                 }
             }
+
+            Console.WriteLine("\nIEnumerator test" + "\n" + new string('-', 30));
+            Console.WriteLine(test.MoveNext());
+            Console.WriteLine(test.Current);
+            Console.WriteLine(test.MoveNext());
+            Console.WriteLine(test.Current);
+            Console.WriteLine(test.MoveNext());
+            Console.WriteLine(test.Current);
+            Console.WriteLine(test.MoveNext());
 
             Console.ReadKey();
         }
