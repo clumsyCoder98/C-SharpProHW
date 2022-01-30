@@ -1,0 +1,14 @@
+﻿<Window x:Class="Task3MVP.CompressWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task3MVP"
+        mc:Ignorable="d"
+        Title="Compress File" Height="200" Width="400">
+    <Grid>
+        <TextBox x:Name="adressInput" HorizontalAlignment="Center" Margin="0,50,0,0" Text="Place file adress here" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <Button x:Name="compressButton" Content="Compress" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Width="60" Height="30" Click="compressButton_Click"/>
+
+    </Grid>
+</Window>
