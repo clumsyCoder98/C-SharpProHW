@@ -1,0 +1,19 @@
+﻿<Window x:Class="UpgradedReflector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UpgradedReflector"
+        mc:Ignorable="d"
+        Title="Assembly Browser" Height="260" Width="800">
+    <Grid>
+        <Button x:Name="FileButton" Content="File..." HorizontalAlignment="Left" Margin="45,45,0,0" VerticalAlignment="Top" Height="35" Width="70" Click="FileButton_Click"/>
+        <Button x:Name="OpenButton" Content="Open" Margin="685,45,45,0" VerticalAlignment="Top" Height="35" Click="OpenButton_Click"/>
+        <TextBox x:Name="FilePath" HorizontalAlignment="Center" Margin="0,50,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="510" Height="25"/>
+        <CheckBox x:Name="MethodCheck" Content="Show Methods" HorizontalAlignment="Left" Margin="45,105,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="PropCheck" Content="Show Properties" HorizontalAlignment="Left" Margin="45,135,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="FieldsCheck" Content="Show Fields" HorizontalAlignment="Left" Margin="45,165,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="AttributesCheck" Content="Show Attributes" HorizontalAlignment="Left" Margin="45,195,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
